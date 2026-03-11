@@ -16,7 +16,8 @@ def calculate_subtotal(order):
 def calculate_tax(subtotal):
     """Calculates the tax of an order."""
     print('Calculating tax from subtotal...')
-    return round(subtotal * 0.15, 2)
+    tax = subtotal * 0.15
+    return round(tax, 2)
 
 
 def summarize_order(order):
